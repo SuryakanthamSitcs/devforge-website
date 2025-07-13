@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>About {{ domain }}</h1>
+        <p>Built with Rust + Actix Web - The Future of Web Development</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Why We Choose Rust</h2>
+                <p>Rust is a systems programming language that focuses on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using garbage collection.</p>
+                
+                <h3>🦀 Rust Benefits:</h3>
+                <ul>
+                    <li><strong>Zero-cost abstractions:</strong> High-level features without runtime overhead</li>
+                    <li><strong>Memory safety:</strong> Prevents common bugs like null pointer dereferences</li>
+                    <li><strong>Thread safety:</strong> Fearless concurrency without data races</li>
+                    <li><strong>Performance:</strong> Comparable to C and C++</li>
+                    <li><strong>Reliability:</strong> Catch errors at compile time</li>
+                </ul>
+            </div>
+            
+            <div class="about-stats">
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <span class="tech-icon">🦀</span>
+                        <div>
+                            <h4>Rust</h4>
+                            <p>Systems programming language</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🚀</span>
+                        <div>
+                            <h4>Actix Web</h4>
+                            <p>High-performance web framework</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🎨</span>
+                        <div>
+                            <h4>Tera Templates</h4>
+                            <p>Fast template engine</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🗄️</span>
+                        <div>
+                            <h4>SQLx</h4>
+                            <p>Async SQL toolkit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="performance">
+    <div class="container">
+        <h2>Performance Metrics</h2>
+        <div class="metrics-grid">
+            <div class="metric">
+                <div class="metric-value">~0.1ms</div>
+                <div class="metric-label">Response Time</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">1M+</div>
+                <div class="metric-label">Requests/sec</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">~2MB</div>
+                <div class="metric-label">Memory Usage</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">Uptime</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

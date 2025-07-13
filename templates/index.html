@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Welcome to {{ domain }}</h1>
+            <p>Your blazingly fast Rust + Actix Web website is ready! 🦀</p>
+            <div class="hero-buttons">
+                <a href="/about" class="btn btn-primary">Learn More</a>
+                <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Why Rust + Actix Web?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Blazingly Fast</h3>
+                <p>Rust's zero-cost abstractions deliver incredible performance</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Memory Safe</h3>
+                <p>No null pointer dereferences, buffer overflows, or memory leaks</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Reliable</h3>
+                <p>Rust's type system prevents common programming errors</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>High Performance</h3>
+                <p>Actix Web is one of the fastest web frameworks available</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Modern Web</h3>
+                <p>Full HTTP/2 support, WebSockets, and async/await</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure</h3>
+                <p>Built-in security features and HTTPS by default</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Experience Rust Power?</h2>
+        <p>Explore the fastest, safest, and most reliable web development experience.</p>
+        <a href="/contact" class="btn btn-primary">Start Your Journey</a>
+    </div>
+</section>
+{% endblock %}
